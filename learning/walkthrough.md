@@ -8,7 +8,7 @@ The [Scarani bridge](ANCHOR.md) supplies the Bell-theory foundation. This walkth
 
 ## 1. A single qubit and a fixed menu
 
-**Milestones M01–M05.** A qubit state is described by a density matrix $`\rho`$: a positive matrix with trace one. A binary measurement has two positive effects that sum to the identity. The probability of outcome $`a`$ is $`\operatorname{Tr}(\rho M_a)`$.
+**Milestones M01–M05.** A qubit state is described by a density matrix $`\rho`$: a positive matrix with trace one. A binary measurement has two positive effects that sum to the identity. The probability of outcome $`a`$ is $`\mathrm{Tr}(\rho M_a)`$.
 
 The measurements considered here have outcomes $`a=\pm1`$ and effects
 

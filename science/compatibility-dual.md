@@ -49,7 +49,7 @@ The minimum is attained: the feasible set is closed, and every bounded objective
 
 ```math
 \mathcal C=
-\operatorname{conv}
+\mathrm{conv}
 \left\{s\otimes\mathbf u:
 s\in\mathcal S_m,\ \|\mathbf u\|_2\le1\right\}.
 ```
@@ -92,7 +92,7 @@ They therefore form a parent for the stated measurements.
 **Proof, necessary direction.** Let $`\{G_s\}`$ be any parent. On Hermitian qubit operators, define
 
 ```math
-J(H)=\operatorname{Tr}(H)I-H.
+J(H)=\mathrm{Tr}(H)I-H.
 ```
 
 This positive, unital involution reverses the Bloch vector. It satisfies $`J(A_x)=-A_x`$ because the observables are traceless. Symmetrize the parent by setting
@@ -194,7 +194,7 @@ Fix a feasible dual tuple $`\{\mathbf v_x\}`$, independently of the Haar state t
 T=\sum_{x=1}^{m}\mathbf a_x\mathbf v_x^{\mathsf T}.
 ```
 
-The identity $`\operatorname{Tr}T=\sum_x\mathbf a_x\cdot\mathbf v_x`$ relates this matrix to the dual objective.
+The identity $`\mathrm{Tr}T=\sum_x\mathbf a_x\cdot\mathbf v_x`$ relates this matrix to the dual objective.
 
 **Proposition 2.** A common orthogonal rotation of the dual vectors produces a feasible tuple for which
 
@@ -202,7 +202,7 @@ The identity $`\operatorname{Tr}T=\sum_x\mathbf a_x\cdot\mathbf v_x`$ relates th
 T\succeq0,
 \qquad 0\preceq T\preceq I,
 \qquad
-\gamma:=\operatorname{Tr}T\ge
+\gamma:=\mathrm{Tr}T\ge
 \sum_x\mathbf a_x\cdot\mathbf v_x^{\mathrm{old}}.
 ```
 
@@ -213,8 +213,8 @@ For an optimal initial tuple, $`\gamma=\nu(A)`$.
 ```math
 TR^{\mathsf T}=U\Sigma U^{\mathsf T}\succeq0,
 \qquad
-\operatorname{Tr}(TR^{\mathsf T})=\|T\|_*
-\ge\operatorname{Tr}T.
+\mathrm{Tr}(TR^{\mathsf T})=\|T\|_*
+\ge\mathrm{Tr}T.
 ```
 
 Here $`\|T\|_*`$ is the sum of singular values. Since the rotated tuple is feasible, its objective cannot exceed $`\nu(A)`$; equality therefore holds if the initial tuple was optimal. This rotation changes only mathematical witness vectors. It does not rotate or replace the physical measurement family.
@@ -282,7 +282,7 @@ has total norm $`r`$. Hence
 ```math
 \nu=r,
 \qquad
-T=\operatorname{diag}(\eta_1^2/r,\ldots,\eta_k^2/r,0,\ldots,0).
+T=\mathrm{diag}(\eta_1^2/r,\ldots,\eta_k^2/r,0,\ldots,0).
 ```
 
 The two-axis and three-axis thresholds are consequently $`\eta_1^2+\eta_2^2>1`$ and $`\eta_1^2+\eta_2^2+\eta_3^2>1`$, respectively. The [scaled Bell construction](bell-construction.md#main-scaled-dual-bound) reduces in these examples to the corresponding noise-weighted Pauli coefficients.

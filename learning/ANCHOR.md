@@ -36,7 +36,7 @@ The book treats general Bell scenarios. This repository specializes to one qubit
 | A linear inequality $`I(\mathcal P)\le I_L`$ | A correlator functional $`\mathcal B_c(E)`$ with a two-sided local bound $`\lvert\mathcal B_c(E)\rvert\le L_{\mathrm{abs}}(c)`$. |
 | Bloch coordinates describing a state | The vector $`\mathbf a_x`$ here describes a **measurement observable**. The quantities $`r_P=\langle\psi\rvert P\lvert\psi\rangle`$ describe the target state. |
 
-The recorded outcome is always $`+1`$ or $`-1`$. For an unsharp measurement, the eigenvalues of $`A_x`$ are $`\pm\|\mathbf a_x\|_2`$, which may lie strictly inside that interval. The relation $`\operatorname{Tr}(\rho A_x)=p(+1\mid x)-p(-1\mid x)`$ connects the observable to the average recorded sign. The unbiased assumption makes these probabilities equal on the maximally mixed qubit. A Bloch vector of unit length gives a sharp projective measurement.
+The recorded outcome is always $`+1`$ or $`-1`$. For an unsharp measurement, the eigenvalues of $`A_x`$ are $`\pm\|\mathbf a_x\|_2`$, which may lie strictly inside that interval. The relation $`\mathrm{Tr}(\rho A_x)=p(+1\mid x)-p(-1\mid x)`$ connects the observable to the average recorded sign. The unbiased assumption makes these probabilities equal on the maximally mixed qubit. A Bloch vector of unit length gives a sharp projective measurement.
 
 The settings are selected independently of the source and its hidden variables. Parties do not communicate during a Bell trial, and every trial is retained. The menu is fixed independently of both the target state and $`N`$. Knowledge of the target is used to choose the coefficients before collecting test data. These restrictions, and the distinction between state preparation and measurement, are stated in [Model and results](../science/model-and-results.md).
 
@@ -57,7 +57,7 @@ In the general construction, the mathematical label $`0`$ means omission from th
 
 ```math
 E_{\mathbf x}(\rho)
-=\operatorname{Tr}\!\left[\rho\bigotimes_{i=1}^{N}A_{x_i}\right],
+=\mathrm{Tr}\!\left[\rho\bigotimes_{i=1}^{N}A_{x_i}\right],
 \qquad \mathbf x\in\{0,1,\ldots,m\}^{N}.
 ```
 
@@ -125,7 +125,7 @@ The selected source makes the experiment and its local comparison set precise. T
 | Additional argument | What it accomplishes | Authoritative source and map connection |
 | --- | --- | --- |
 | Exact compatibility norm and its signed-sum dual | Quantifies how far the entire finite measurement menu lies beyond joint measurability. The norm and duality are inherited research inputs. | [Compatibility dual](../science/compatibility-dual.md); [BN/BJN attribution](../references/README.md#bjn2022); [M04–M05](MILESTONES.md#M04). |
-| Polar alignment of the dual transfer matrix | Produces $`0\preceq T\preceq I`$ and $`\operatorname{Tr}T=\nu`$ by changing mathematical witness vectors, while keeping the physical menu fixed. | [Transfer-matrix proof](../science/compatibility-dual.md#4-polar-alignment-and-the-transfer-matrix); [M15](MILESTONES.md#M15). |
+| Polar alignment of the dual transfer matrix | Produces $`0\preceq T\preceq I`$ and $`\mathrm{Tr}T=\nu`$ by changing mathematical witness vectors, while keeping the physical menu fixed. | [Transfer-matrix proof](../science/compatibility-dual.md#4-polar-alignment-and-the-transfer-matrix); [M15](MILESTONES.md#M15). |
 | Two representations of the same tailored functional | Each deterministic score becomes a product-operator expectation; the quantum score becomes a nonnegative weighted sum of squared Pauli expectations. | [Bell construction](../science/bell-construction.md); [M16–M18](MILESTONES.md#M16). |
 | Quantitative Haar estimates | Second and fourth moments give growth and lower concentration of the quantum score. A simultaneous upper bound controls all classical assignments on the same target. A mean alone would not establish typical violation. | [Haar moments](../science/haar-moments.md); [M19–M20](MILESTONES.md#M19). |
 | Positive and scaled constructions | Positive auxiliary factors give the simpler proof. Scaling the dual improves the guaranteed exponential base and requires the bound for Hermitian factors that may be indefinite. | [Two constructions](../science/bell-construction.md#simpler-positive-dual-bound), [main theorem](../science/model-and-results.md#main-finite-party-theorem); [M21–M23](MILESTONES.md#M21). |

@@ -202,7 +202,7 @@ Take $`\tau=1`$. Dual feasibility gives
 \left\|\sum_xs_{i,x}\mathbf v_x\right\|_2\le1.
 ```
 
-Every local factor of $`F_s^{(1)}`$ is consequently positive semidefinite, with trace two, so $`F_s^{(1)}\succeq0`$ and $`\operatorname{Tr}F_s^{(1)}=D`$. Its deterministic score is nonnegative. The positive quadratic-form tail and the union bound from [Haar moments](haar-moments.md#5-positive-quadratic-forms-have-an-exponential-tail) yield
+Every local factor of $`F_s^{(1)}`$ is consequently positive semidefinite, with trace two, so $`F_s^{(1)}\succeq0`$ and $`\mathrm{Tr}F_s^{(1)}=D`$. Its deterministic score is nonnegative. The positive quadratic-form tail and the union bound from [Haar moments](haar-moments.md#5-positive-quadratic-forms-have-an-exponential-tail) yield
 
 ```math
 L_{\mathrm{abs}}(c^{(1)}(\psi))
@@ -335,7 +335,7 @@ The proofs do not require exact optimization. Suppose a fixed feasible tuple has
 
 ```math
 T=\sum_x\mathbf a_x\mathbf v_x^{\mathsf T}\succeq0,
-\qquad \gamma=\operatorname{Tr}T>1.
+\qquad \gamma=\mathrm{Tr}T>1.
 ```
 
 Proposition 2 of [Compatibility norm and aligned dual certificates](compatibility-dual.md#4-polar-alignment-and-the-transfer-matrix) gives $`T\preceq I`$ and $`\gamma\le\nu(A)`$. It also shows how to obtain such a positive matrix by polar alignment from any feasible tuple whose original objective exceeds one.

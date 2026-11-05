@@ -36,7 +36,7 @@ Set $`A_0=I`$ and index correlators by $`\mathbf x\in\{0,1,\ldots,m\}^{N}`$. In 
 
 ```math
 E_{\mathbf x}(\rho)
-=\operatorname{Tr}\!\left[
+=\mathrm{Tr}\!\left[
 \rho\bigotimes_{i=1}^{N}A_{x_i}
 \right].
 ```
@@ -99,7 +99,7 @@ T=\sum_x\mathbf a_x\mathbf v_x^{\mathsf T},
 \qquad
 0\preceq T\preceq I,
 \qquad
-\operatorname{Tr}T=\nu.
+\mathrm{Tr}T=\nu.
 ```
 
 The three eigenvalues are denoted by $`\lambda_j`$, so $`0\le\lambda_j\le1`$ and $`\sum_j\lambda_j=\nu`$. Fix this dual independently of the Haar state.
@@ -233,7 +233,7 @@ If $`\nu\le1`$, a joint parent measurement exists. Let $`G_{s_i}`$ denote its ef
 
 ```math
 p(s_1,\ldots,s_N)
-=\operatorname{Tr}\!\left[
+=\mathrm{Tr}\!\left[
 \rho\,G_{s_1}\otimes\cdots\otimes G_{s_N}
 \right]
 ```
