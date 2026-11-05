@@ -1,0 +1,49 @@
+name: Hosted mathematics
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '**.md'
+      - '**.markdown'
+      - 'verification/hosted/**'
+      - '.github/workflows/hosted-math.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out the exact proposed source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          persist-credentials: false
+
+      - name: Install the browser and mathematical reference renderer
+        run: |
+          npm install --prefix "$RUNNER_TEMP/hosted-deps" playwright@1.56.1 mathjax-full@3.2.1
+          "$RUNNER_TEMP/hosted-deps/node_modules/.bin/playwright" install --with-deps chromium
+
+      - name: Compare the real hosted pages with the pinned source
+        env:
+          NODE_PATH: ${{ runner.temp }}/hosted-deps/node_modules
+          CHECKED_REVISION: ${{ github.event.pull_request.head.sha }}
+        run: |
+          node verification/hosted/capture_hosted_math.cjs \
+            --root "$GITHUB_WORKSPACE" \
+            --repository "$GITHUB_REPOSITORY" \
+            --revision "$CHECKED_REVISION" \
+            --output "$RUNNER_TEMP/hosted-capture"
+
+      - name: Preserve the report and captures
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: hosted-math-${{ github.event.pull_request.head.sha }}
+          path: ${{ runner.temp }}/hosted-capture
+          if-no-files-found: error
+          retention-days: 7

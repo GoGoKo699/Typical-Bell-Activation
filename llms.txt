@@ -6,6 +6,10 @@ typical-state threshold under independent local depolarization with one qubit
 per party. The measurement menu is fixed; the Bell functional is state dependent.
 
 Scientific entrypoint: science/README.md
+Conceptual story and study routes: learning/README.md
+Single educational anchor and notation/assumption bridge: learning/ANCHOR.md
+Project-defined map, M01-M30, background14/narrative16: learning/MILESTONES.md
+Worked two-qubit example and connected proof explanation: learning/walkthrough.md
 Experiment, quantifiers, normalization and main bound: science/model-and-results.md
 Compatibility norm and positive dual transfer: science/compatibility-dual.md
 Exact Haar moments and concentration: science/haar-moments.md
@@ -26,3 +30,9 @@ existential threshold already known versus typical quantitative activation;
 exponential Bell ratio versus sample complexity. The constructive rate is not
 claimed optimal. A fixed positive ratio is different from an arbitrarily small
 first violation. Current proofs have one authoritative home by scientific topic.
+
+For a study request, use the selected Scarani (2019, first edition) bridge and
+the milestone map; map conceptual explanations to the exact science sources.
+For a specialist result or proof request, use science/ directly. For a numerical
+reproduction request, use verification/. The shared learning map records the
+project's understanding targets and does not establish any reader's mastery.

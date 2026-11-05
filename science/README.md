@@ -17,6 +17,8 @@ The experiment uses one qubit at each of $`N`$ parties, with the same fixed menu
 
 The [related-work account](../references/README.md) identifies which ingredients and qualitative conclusions are inherited. The [verification guide](../verification/README.md) separates finite arithmetic checks from the analytical theorems.
 
+For a conceptual introduction, the [learning route](../learning/README.md) connects Scarani's *Bell Nonlocality* to the project through a worked two-qubit example, a source bridge and the 30-milestone map. The exact scientific statements and full proofs remain on the topic pages listed above.
+
 ## The mechanism
 
 An incompatibility witness provides dual vectors whose every signed sum lies in the unit Bloch ball. For the simplest scaling, each classical deterministic assignment therefore produces a positive product operator with trace $`2^N`$. Its expectation in a typical pure state remains small, even after taking a maximum over all deterministic assignments.
