@@ -1,0 +1,28 @@
+# Typical Bell Activation
+
+This repository proves quantitative Haar-typical Bell activation for every fixed
+finite family of incompatible unbiased binary qubit measurements, and the exact
+typical-state threshold under independent local depolarization with one qubit
+per party. The measurement menu is fixed; the Bell functional is state dependent.
+
+Scientific entrypoint: science/README.md
+Experiment, quantifiers, normalization and main bound: science/model-and-results.md
+Compatibility norm and positive dual transfer: science/compatibility-dual.md
+Exact Haar moments and concentration: science/haar-moments.md
+Bell coefficients and deterministic classical operators: science/bell-construction.md
+Local-depolarization threshold and finite directions: science/local-noise-threshold.md
+All-state converse and fixed-margin party bounds: science/party-count.md
+Exact finite witness: science/finite-example.md
+Preparation, description and statistical costs: science/resources.md
+Prior results and source-level distinctions: references/README.md
+Structured bibliography: references/references.bib
+Reproduction commands and check scope: verification/README.md
+
+Keep these distinctions explicit: ordinary versus genuine multipartite
+nonlocality; full behavior versus full correlations; fixed measurements versus
+state-tailored inequalities; local depolarization versus global white noise;
+absolute local normalization versus arbitrary affine one-sided ratios;
+existential threshold already known versus typical quantitative activation;
+exponential Bell ratio versus sample complexity. The constructive rate is not
+claimed optimal. A fixed positive ratio is different from an arbitrarily small
+first violation. Current proofs have one authoritative home by scientific topic.
