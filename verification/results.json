@@ -1,0 +1,179 @@
+{
+  "status": "pass",
+  "numpy_version": "2.3.5",
+  "moments": {
+    "distinct_pairs_checked": 108,
+    "fourth_moments_checked": 18,
+    "commuting_and_anticommuting": [
+      -1,
+      1
+    ]
+  },
+  "generic_operator": {
+    "certificate_strength": 1.6160098033079007,
+    "transfer_eigenvalues": [
+      0.3854470273190174,
+      0.5847962574451567,
+      0.6457665185437262
+    ],
+    "maximum_direct_identity_discrepancy": 6.661338147750939e-16,
+    "minimum_deterministic_positive_dual_score": 0.022527095159257216,
+    "scope": "Feasible dual certificate, not a numerical computation of the optimum norm."
+  },
+  "finite_examples": [
+    {
+      "parties": 6,
+      "settings_per_party": 3,
+      "visibility": [
+        1,
+        1
+      ],
+      "state_norm_squared": 954,
+      "deterministic_assignments": 262144,
+      "local_min": "-14728/477",
+      "local_max": "28808/477",
+      "absolute_local_bound": "28808/477",
+      "quantum_value": "64",
+      "ratio": "3816/3601",
+      "ratio_decimal": 1.0597056373229659,
+      "violation": true,
+      "maximizing_assignment": [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "absolute_maximum_numerator": 57616,
+      "normalization_denominator": 954
+    },
+    {
+      "parties": 6,
+      "settings_per_party": 3,
+      "visibility": [
+        9,
+        10
+      ],
+      "state_norm_squared": 954,
+      "deterministic_assignments": 262144,
+      "local_min": "-225146919/13250000",
+      "local_max": "1070104863/26500000",
+      "absolute_local_bound": "1070104863/26500000",
+      "quantum_value": "36425818702451279/1404500000000000",
+      "ratio": "36425818702451279/56715557739000000",
+      "ratio_decimal": 0.6422544387217294,
+      "violation": false,
+      "maximizing_assignment": [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "absolute_maximum_numerator": 38523775068,
+      "normalization_denominator": 954000000
+    },
+    {
+      "parties": 6,
+      "settings_per_party": 3,
+      "visibility": [
+        1,
+        2
+      ],
+      "state_norm_squared": 954,
+      "deterministic_assignments": 262144,
+      "local_min": "865/7632",
+      "local_max": "10675/1696",
+      "absolute_local_bound": "10675/1696",
+      "quantum_value": "71845367/51775488",
+      "ratio": "71845367/325886400",
+      "ratio_decimal": 0.2204613847033813,
+      "violation": false,
+      "maximizing_assignment": [
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1
+        ]
+      ],
+      "absolute_maximum_numerator": 384300,
+      "normalization_denominator": 61056
+    }
+  ],
+  "scope": "Exact finite witness and analytical identity checks; not a numerical proof of asymptotic typicality or optimality."
+}
