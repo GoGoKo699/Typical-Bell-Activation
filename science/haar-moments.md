@@ -329,7 +329,7 @@ Apply the same argument to $`-Y`$ and combine the tails. If $`F=0`$, the stated 
 There is also a common normalization bound for all operators evaluated on this same $`z`$:
 
 ```math
-\Pr[\|z\|_2^2<D/2]
+\Pr[\|z\|_2^2\lt D/2]
 \le e^{D/2}\mathbb E e^{-\|z\|_2^2}
 =e^{-(\ln2-1/2)D}
 \le e^{-D/8}.

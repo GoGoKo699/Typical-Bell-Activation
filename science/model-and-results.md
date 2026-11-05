@@ -166,7 +166,7 @@ R_N^{(\nu)}(\psi)
 
 All constants are explicit. For small $`N`$, the probability lower bound may be zero. For every fixed incompatible family, it tends to one, while the final ratio lower bound tends to infinity.
 
-Consequently, for any fixed $`1<r<g(\nu)`$,
+Consequently, for any fixed $`1\lt r\lt g(\nu)`$,
 
 ```math
 \Pr\bigl[R_N^{(\nu)}(\psi)\ge r^N\bigr]

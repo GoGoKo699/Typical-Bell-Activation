@@ -304,7 +304,7 @@ For fixed $`m`$ and $`\nu>1`$, $`k_N=O_m(N)`$ and the failure probability tends 
 g(\nu)=\sqrt{\frac{1+\nu^2}{2}}>1.
 ```
 
-More explicitly, for every fixed $`1<r<g(\nu)`$,
+More explicitly, for every fixed $`1\lt r\lt g(\nu)`$,
 
 ```math
 \Pr\bigl[R_N^{(\nu)}(\psi)\ge r^N\bigr]\longrightarrow1.
