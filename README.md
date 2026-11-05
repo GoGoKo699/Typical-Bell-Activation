@@ -24,6 +24,12 @@ every fixed $`\eta>1/2`$ admits a finite measurement menu for which the fraction
 
 Start with [the scientific reading route](science/README.md). The complete account includes the inherited compatibility dual, its positive transfer matrix, the Haar moment calculation, the Bell construction, the local-noise corollary, and the resource costs. [Question-to-file guide](llms.txt).
 
+## Learn the construction
+
+The learning route uses **Valerio Scarani, *Bell Nonlocality*, first edition (2019)** as its single educational anchor. The [source-to-project bridge](learning/ANCHOR.md) selects the relevant sections and translates their notation into this model. The [worked walkthrough](learning/walkthrough.md) begins with a complete two-qubit Bell witness and develops the typical-state mechanism.
+
+The [30-milestone map](learning/MILESTONES.md) moves from 14 background/preliminaries targets to 16 narrative/innovation targets, ending with the noise boundary, party counts, resource costs and open questions. [Learning overview](learning/README.md).
+
 ## Reproduce the finite checks
 
 ```bash

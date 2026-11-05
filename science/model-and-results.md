@@ -5,7 +5,7 @@ Every fixed incompatible finite family of unbiased binary qubit measurements adm
 The main guaranteed exponential base is
 
 ```math
-\boxed{g(\nu)=\sqrt{\frac{1+\nu^2}{2}},}
+\boxed{g(\nu)=\sqrt{(1+\nu^2)/2},}
 ```
 
 where $`\nu`$ is the family's compatibility norm. Joint measurability is equivalent to $`\nu\le1`$, so the constructive bound grows exponentially exactly on the incompatible side of that threshold. The base is a lower bound supplied by this construction, not an optimality claim.
@@ -36,7 +36,7 @@ Set $`A_0=I`$ and index correlators by $`\mathbf x\in\{0,1,\ldots,m\}^{N}`$. In 
 
 ```math
 E_{\mathbf x}(\rho)
-=\operatorname{Tr}\!\left[
+=\mathrm{Tr}\!\left[
 \rho\bigotimes_{i=1}^{N}A_{x_i}
 \right].
 ```
@@ -99,7 +99,7 @@ T=\sum_x\mathbf a_x\mathbf v_x^{\mathsf T},
 \qquad
 0\preceq T\preceq I,
 \qquad
-\operatorname{Tr}T=\nu.
+\mathrm{Tr}T=\nu.
 ```
 
 The three eigenvalues are denoted by $`\lambda_j`$, so $`0\le\lambda_j\le1`$ and $`\sum_j\lambda_j=\nu`$. Fix this dual independently of the Haar state.
@@ -166,13 +166,13 @@ R_N^{(\nu)}(\psi)
 
 All constants are explicit. For small $`N`$, the probability lower bound may be zero. For every fixed incompatible family, it tends to one, while the final ratio lower bound tends to infinity.
 
-Consequently, for any fixed $`1<r<g(\nu)`$,
+Consequently, for any fixed $`1\lt r\lt g(\nu)`$,
 
 ```math
 \Pr\bigl[R_N^{(\nu)}(\psi)\ge r^N\bigr]
 \longrightarrow1,
 \qquad
-g(\nu)=\sqrt{\frac{1+\nu^2}{2}}.
+g(\nu)=\sqrt{(1+\nu^2)/2}.
 ```
 
 In particular,
@@ -207,7 +207,7 @@ Here every deterministic score is the expectation of a positive operator with tr
 Both theorems establish the same compatibility threshold. The scaled version has the larger guaranteed base because
 
 ```math
-\sqrt{\frac{1+\nu^2}{2}}\ge\frac{1+\nu}{2},
+\sqrt{(1+\nu^2)/2}\ge\frac{1+\nu}{2},
 ```
 
 with strict inequality for $`\nu>1`$.
@@ -233,7 +233,7 @@ If $`\nu\le1`$, a joint parent measurement exists. Let $`G_{s_i}`$ denote its ef
 
 ```math
 p(s_1,\ldots,s_N)
-=\operatorname{Tr}\!\left[
+=\mathrm{Tr}\!\left[
 \rho\,G_{s_1}\otimes\cdots\otimes G_{s_N}
 \right]
 ```
@@ -255,7 +255,7 @@ For $`\nu>1`$, the same absolute normalization admits the general upper bound
 The proof in [Party count](party-count.md) rescales $`N-1`$ parties to compatibility and expresses their original measurements through signed output-flip kernels. This preserves the marginal correlators and constant term. In particular, the constructive lower base and the universal upper base obey
 
 ```math
-\sqrt{\frac{1+\nu^2}{2}}
+\sqrt{(1+\nu^2)/2}
 \le\liminf_{N\to\infty}\mathcal R_N(A)^{1/N}
 \le\limsup_{N\to\infty}\mathcal R_N(A)^{1/N}
 \le\nu.

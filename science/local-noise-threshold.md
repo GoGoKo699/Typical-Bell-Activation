@@ -10,7 +10,7 @@ For $`0\le\eta\le1`$, define
 
 ```math
 \Delta_\eta(X)
-=\eta X+(1-\eta)\operatorname{tr}(X)\frac{I}{2}.
+=\eta X+(1-\eta)\mathrm{tr}(X)\frac{I}{2}.
 ```
 
 Let $`D=2^N`$, let $`|\psi\rangle`$ be Haar distributed on $`(\mathbb C^2)^{\otimes N}`$, and set
@@ -45,7 +45,7 @@ The channel is self-adjoint for the Hilbert–Schmidt pairing. For a POVM effect
 
 ```math
 \Delta_\eta^\dagger(E)
-=\eta E+(1-\eta)\operatorname{tr}(E)\frac I2.
+=\eta E+(1-\eta)\mathrm{tr}(E)\frac I2.
 ```
 
 Consequently, the projective measurement with effects $`(I\pm\mathbf n_x\cdot\boldsymbol\sigma)/2`$ on the output is equivalent to the unbiased binary observable
@@ -192,7 +192,7 @@ Put $`P_0=I`$ and $`P_x=\mathbf n_x\cdot\boldsymbol\sigma`$ for the physical pro
 Q(\psi,\eta)
 =\sum_{x_1,\ldots,x_N=0}^m
 c_{x_1\ldots x_N}(\psi)
-\operatorname{tr}\!\left[
+\mathrm{tr}\!\left[
 \rho_{N,\eta}(\psi)
 P_{x_1}\otimes\cdots\otimes P_{x_N}
 \right].
@@ -224,7 +224,7 @@ The weighted Haar-moment identities in [haar-moments.md](haar-moments.md) give
 ```math
 \mathbb E(Q-1)=\frac{W}{D+1},
 \qquad
-\frac{\operatorname{Var}(Q-1)}{[\mathbb E(Q-1)]^2}
+\frac{\mathrm{Var}(Q-1)}{[\mathbb E(Q-1)]^2}
 \le\frac2D+2\frac{W_2}{W^2}.
 ```
 
@@ -276,7 +276,7 @@ f(t)=1+\sqrt{2t}+t.
 The operator estimates underlying the uniform bound are
 
 ```math
-\operatorname{tr}O_{\mathbf s}=D,
+\mathrm{tr}O_{\mathbf s}=D,
 \qquad
 \|O_{\mathbf s}\|_{\mathrm{HS}}\le D b^{N/2},
 \qquad
@@ -284,7 +284,7 @@ The operator estimates underlying the uniform bound are
 \le(1+\mu)^N\le D b^{N/2}.
 ```
 
-The Hilbert–Schmidt estimate uses $`\operatorname{tr}(I+\mu\mathbf b\cdot\boldsymbol\sigma)^2=2(1+\mu^2\|\mathbf b\|^2)`$. The last inequality follows from $`(1+\mu)^2\le2(1+\mu^2)`$.
+The Hilbert–Schmidt estimate uses $`\mathrm{tr}(I+\mu\mathbf b\cdot\boldsymbol\sigma)^2=2(1+\mu^2\|\mathbf b\|^2)`$. The last inequality follows from $`(1+\mu)^2\le2(1+\mu^2)`$.
 
 Apply the Gaussian quadratic-form estimate proved in [haar-moments.md](haar-moments.md), with the operator estimates above, and union bound over the $`2^{mN}`$ deterministic assignments. It gives
 
@@ -309,7 +309,7 @@ Since $`b>1`$ and $`t_N=O(N)`$ at fixed menu, this bound grows exponentially. Th
 
 ## 6. Locality at and below the endpoint
 
-[Renner's joint-measurability theorem](../references/README.md#renner2024) applies to precisely the map $`E\mapsto\eta E+(1-\eta)\operatorname{tr}(E)I/2`$. At $`\eta\le1/2`$, all noisy qubit POVMs admit a parent measurement and classical postprocessing.
+[Renner's joint-measurability theorem](../references/README.md#renner2024) applies to precisely the map $`E\mapsto\eta E+(1-\eta)\mathrm{tr}(E)I/2`$. At $`\eta\le1/2`$, all noisy qubit POVMs admit a parent measurement and classical postprocessing.
 
 For arbitrary local POVM families at the $`N`$ parties, write
 
@@ -322,7 +322,7 @@ For an arbitrary input state $`\rho`$, define the hidden-variable probability me
 
 ```math
 q(d\lambda_1\cdots d\lambda_N)
-=\operatorname{tr}\!\left[
+=\mathrm{tr}\!\left[
 \rho\,
 G_1(d\lambda_1)\otimes\cdots\otimes G_N(d\lambda_N)
 \right].

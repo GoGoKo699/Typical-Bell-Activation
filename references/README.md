@@ -6,6 +6,10 @@ The contribution is a quantitative conversion from measurement incompatibility t
 
 Bibliographic records are provided in [references.bib](references.bib). The explicit anchors and citation keys on this page are stable targets for the mathematical notes.
 
+## Educational anchor
+
+The learning route uses Valerio Scarani, **Bell Nonlocality**, first edition (Oxford University Press, 2019), DOI [10.1093/oso/9780198788416.001.0001](https://doi.org/10.1093/oso/9780198788416.001.0001). The [source-to-project bridge](../learning/ANCHOR.md) identifies the selected passages and their role. This educational source is distinct from the primary research ingredients and comparisons below; its structured citation key is `scarani2019`.
+
 ## Closest comparisons
 
 | Earlier result | Relation to this project |

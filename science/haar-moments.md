@@ -19,7 +19,7 @@ where $`U_\pi`$ permutes the $`k`$ tensor factors. Indeed, the average is invari
 ```math
 P_{\mathrm{sym}}=\frac1{k!}\sum_{\pi\in S_k}U_\pi,
 \qquad
-\dim\operatorname{Sym}^k(\mathbb C^D)
+\dim\mathrm{Sym}^k(\mathbb C^D)
 =\binom{D+k-1}{k}
 ```
 
@@ -30,8 +30,8 @@ Contracting this identity with $`H_1\otimes\cdots\otimes H_k`$ expresses the mom
 ```math
 \mathbb E\bigl[\langle H\rangle_\psi
                  \langle K\rangle_\psi\bigr]
-=\frac{\operatorname{Tr}H\operatorname{Tr}K
-       +\operatorname{Tr}(HK)}{D(D+1)}.
+=\frac{\mathrm{Tr}H\mathrm{Tr}K
+       +\mathrm{Tr}(HK)}{D(D+1)}.
 ```
 
 These identities are also valid in any fixed local Pauli frame; no frame is selected after seeing $`\psi`$.
@@ -50,7 +50,7 @@ For one nonidentity Pauli word, the fourth moment is
 \boxed{\mathbb E r_P^4=\frac3{(D+1)(D+3)}.}
 ```
 
-To derive it, apply the fourth-order identity to $`P,P,P,P`$. Every permutation with a fixed point vanishes because $`\operatorname{Tr}P=0`$. The three products of two transpositions contribute $`3D^2`$, and the six four-cycles contribute $`6D`$. Division by $`D(D+1)(D+2)(D+3)`$ yields the stated expression.
+To derive it, apply the fourth-order identity to $`P,P,P,P`$. Every permutation with a fixed point vanishes because $`\mathrm{Tr}P=0`$. The three products of two transpositions contribute $`3D^2`$, and the six four-cycles contribute $`6D`$. Division by $`D(D+1)(D+2)(D+3)`$ yields the stated expression.
 
 For two distinct nonidentity Pauli words, put $`\chi(P,Q)=1`$ if they commute and $`\chi(P,Q)=-1`$ if they anticommute. Then
 
@@ -60,7 +60,7 @@ For two distinct nonidentity Pauli words, put $`\chi(P,Q)=1`$ if they commute an
 =\frac{D+4+2\chi(P,Q)}{(D+1)(D+2)(D+3)}.}
 ```
 
-Here the single nonzero pairing of the two $`P`$ factors and the two $`Q`$ factors contributes $`D^2`$. Among the six four-cycles, four have trace $`D`$ and two have trace $`\operatorname{Tr}(PQPQ)=\chi(P,Q)D`$. The other pairings contain $`\operatorname{Tr}(PQ)=0`$. These are all nonzero contributions.
+Here the single nonzero pairing of the two $`P`$ factors and the two $`Q`$ factors contributes $`D^2`$. Among the six four-cycles, four have trace $`D`$ and two have trace $`\mathrm{Tr}(PQPQ)=\chi(P,Q)D`$. The other pairings contain $`\mathrm{Tr}(PQ)=0`$. These are all nonzero contributions.
 
 ## 3. A weighted variance lemma
 
@@ -84,7 +84,7 @@ X=\sum_{P\ne I_N}w_Pr_P^2,
 
 ```math
 \boxed{
-\frac{\operatorname{Var}X}{\mu^2}
+\frac{\mathrm{Var}X}{\mu^2}
 \le
 \frac{2D}{(D+2)(D+3)}
 +\frac{2D(D+1)}{(D+2)(D+3)}\frac{S_2}{S^2}
@@ -120,7 +120,7 @@ Bounding these by $`2/(D+2)`$ and $`2`$, respectively, proves the second inequal
 Whenever $`S_2/S^2\le1/(D-1)`$, this implies
 
 ```math
-\frac{\operatorname{Var}X}{\mu^2}
+\frac{\mathrm{Var}X}{\mu^2}
 \le\frac2{D+2}+\frac2{D-1}
 \le\frac4{D-1}.
 ```
@@ -225,7 +225,7 @@ The first expression is the retained-constant bound. The last, simpler expressio
 
 ## 5. Positive quadratic forms have an exponential tail
 
-**Lemma 2.** If $`F\succeq0`$ and $`\operatorname{Tr}F=D`$, then for every $`u\ge0`$,
+**Lemma 2.** If $`F\succeq0`$ and $`\mathrm{Tr}F=D`$, then for every $`u\ge0`$,
 
 ```math
 \Pr[\langle F\rangle_\psi\ge u]\le2e^{-u/2}.
@@ -288,7 +288,7 @@ The scaled Bell construction has Hermitian operators that need not be positive. 
 ```math
 \boxed{
 \Pr\!\left[
-|z^\dagger Fz-\operatorname{Tr}F|
+|z^\dagger Fz-\mathrm{Tr}F|
 >\sqrt{2t}\,\|F\|_{\mathrm{HS}}
 +t\,\|F\|_{\mathrm{op}}
 \right]\le2e^{-t}.}
@@ -297,7 +297,7 @@ The scaled Bell construction has Hermitian operators that need not be positive. 
 **Proof.** Unitary invariance lets us diagonalize $`F`$. Its eigenvalues $`f_j`$ are real, and $`E_j=|z_j|^2`$ are independent mean-one exponential variables. Thus
 
 ```math
-Y=z^\dagger Fz-\operatorname{Tr}F
+Y=z^\dagger Fz-\mathrm{Tr}F
 =\sum_j f_j(E_j-1).
 ```
 
@@ -329,13 +329,13 @@ Apply the same argument to $`-Y`$ and combine the tails. If $`F=0`$, the stated 
 There is also a common normalization bound for all operators evaluated on this same $`z`$:
 
 ```math
-\Pr[\|z\|_2^2<D/2]
+\Pr[\|z\|_2^2\lt D/2]
 \le e^{D/2}\mathbb E e^{-\|z\|_2^2}
 =e^{-(\ln2-1/2)D}
 \le e^{-D/8}.
 ```
 
-If $`\operatorname{Tr}F=D`$, then on the simultaneous good events,
+If $`\mathrm{Tr}F=D`$, then on the simultaneous good events,
 
 ```math
 |\langle F\rangle_\psi|

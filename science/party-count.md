@@ -266,7 +266,7 @@ Use this compatible menu at the first $`N-1`$ parties and leave the original men
 
 ```math
 q_{\mathbf s}
-=\operatorname{tr}\!\left[
+=\mathrm{tr}\!\left[
 \rho\left(G_{s_1}\otimes\cdots\otimes G_{s_{N-1}}\otimes I\right)
 \right].
 ```
