@@ -5,7 +5,7 @@ Every fixed incompatible finite family of unbiased binary qubit measurements adm
 The main guaranteed exponential base is
 
 ```math
-\boxed{g(\nu)=\sqrt{\frac{1+\nu^2}{2}},}
+\boxed{g(\nu)=\sqrt{(1+\nu^2)/2},}
 ```
 
 where $`\nu`$ is the family's compatibility norm. Joint measurability is equivalent to $`\nu\le1`$, so the constructive bound grows exponentially exactly on the incompatible side of that threshold. The base is a lower bound supplied by this construction, not an optimality claim.
@@ -172,7 +172,7 @@ Consequently, for any fixed $`1\lt r\lt g(\nu)`$,
 \Pr\bigl[R_N^{(\nu)}(\psi)\ge r^N\bigr]
 \longrightarrow1,
 \qquad
-g(\nu)=\sqrt{\frac{1+\nu^2}{2}}.
+g(\nu)=\sqrt{(1+\nu^2)/2}.
 ```
 
 In particular,
@@ -207,7 +207,7 @@ Here every deterministic score is the expectation of a positive operator with tr
 Both theorems establish the same compatibility threshold. The scaled version has the larger guaranteed base because
 
 ```math
-\sqrt{\frac{1+\nu^2}{2}}\ge\frac{1+\nu}{2},
+\sqrt{(1+\nu^2)/2}\ge\frac{1+\nu}{2},
 ```
 
 with strict inequality for $`\nu>1`$.
@@ -255,7 +255,7 @@ For $`\nu>1`$, the same absolute normalization admits the general upper bound
 The proof in [Party count](party-count.md) rescales $`N-1`$ parties to compatibility and expresses their original measurements through signed output-flip kernels. This preserves the marginal correlators and constant term. In particular, the constructive lower base and the universal upper base obey
 
 ```math
-\sqrt{\frac{1+\nu^2}{2}}
+\sqrt{(1+\nu^2)/2}
 \le\liminf_{N\to\infty}\mathcal R_N(A)^{1/N}
 \le\limsup_{N\to\infty}\mathcal R_N(A)^{1/N}
 \le\nu.

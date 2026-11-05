@@ -301,7 +301,7 @@ These are exact finite inequalities with conservative constants. A negative untr
 For fixed $`m`$ and $`\nu>1`$, $`k_N=O_m(N)`$ and the failure probability tends to zero. The guaranteed constructive exponential base is therefore
 
 ```math
-g(\nu)=\sqrt{\frac{1+\nu^2}{2}}>1.
+g(\nu)=\sqrt{(1+\nu^2)/2}>1.
 ```
 
 More explicitly, for every fixed $`1\lt r\lt g(\nu)`$,
